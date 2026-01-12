@@ -1,5 +1,10 @@
 body{
-    background-color: rgb(61, 58, 58);
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("https://www.mimikov.cz/magazin/wp-content/uploads/2022/08/skolni-potreby-1024x681.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: rgb(211, 202, 191);
 }
 #select1{
@@ -14,9 +19,70 @@ body{
 }
 h1{
     text-align: center;
+    color: black;
+    background-color: beige;
 }
 table{
+    background-color: rgb(61, 58, 58);
     text-align: center;
     margin: auto;
     font-size: 300%;
+}
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.levastrana {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+}
+.pravastrana {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.pravastrana table {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    display: block;
+}
+
+.buttony {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px; 
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 18px;
+    font-size: 29px;
+    border-radius: 6px;
+    
+}
+#addBtn {
+    background-color: #14e014;
+    color: rgb(0, 0, 0);
+}
+
+#removeBtn {
+    background-color: #cf1212;
+    color: rgb(0, 0, 0);
+}
+
+#resetBtn {
+    background-color: #19e9f0;
+    color: rgb(0, 0, 0);
+}
+button:hover {
+    opacity: 0.9;
+}
+button:active {
+    transform: scale(0.97);
 }
