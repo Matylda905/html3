@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prj.css">
+    <title>Evidence Psa</title>
+
+</head>
+<body>
+    
+
+    <table border = "5" bordercolor="black">
+
+        <tr>
+            <td colspan="2">
+                <h1>Evidence Psa</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Majitel Psa</td>
+            <td><input type="text" id="majitel" name="majitel"></td>
+        </tr>
+        <tr>
+            <td>Jméno Psa</td>
+            <td><input type="text" id="jmeno" name="jmeno"></td>
+        </tr>
+        <tr>
+            <td>Datum narození</td>
+            <td><input type="date" id="datum" name="datum"></td>
+        </tr>
+        <tr>
+            <td>Krajské město</td>
+            <td>
+                <select>
+                    <option>Praha</option>
+                    <option>Středočeský</option>
+                    <option>Ústecký</option>
+                    <option>Karlovarský</option>
+                    <option>Plzeňský</option>
+                    <option>Liberecký</option>
+                    <option>Královehradecký</option>
+                    <option>Jihočeský</option>
+                    <option>Vysočina</option>
+                    <option>Pardubický</option>
+                    <option>Jihomoravský</option>
+                    <option>Olomoucký</option>
+                    <option>Moravskoslezský</option>
+                    <option>Zlínský</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Pohlaví</td>
+            <td>
+                <input type="radio" id="Pes" name="pohlavi" value="Pes"> Pes
+                <input type="radio" id="Fena" name="pohlavi" value="Fena"> Fena
+            </td>
+        </tr>
+        <tr>
+            <td>Rasa</td>
+            <td><input type="text" id="rasa" name="rasa"></td>
+        </tr>
+        <tr>
+            <td>Barva</td>
+            <td><input type="text" id="barva" name="barva"></td>
+        </tr>
+        <tr>
+            <td>Vlastnosti</td>
+            <td>
+                <input type="checkbox" id="vlastnosti1" name="vlastnosti" value="společenský"> společenský
+                <input type="checkbox" id="vlastnosti2" name="vlastnosti" value="přítulný"> přítulný
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="odvážný"> odvážný <br>
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="extrovert"> extrovert
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="introvert"> introvert
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="pesimista"> pesimista <br>
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="optimista"> optimista
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="agresivní"> agresivní
+                <input type="checkbox" id="vlastnosti3" name="vlastnosti" value="mírumilovný"> mírumilovný
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="Main.html">
+                <button id="submit">Odeslat</button><button id="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+
+<script src="prj.js"></script>
+</body>
