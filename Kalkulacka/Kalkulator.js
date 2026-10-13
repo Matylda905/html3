@@ -14,11 +14,15 @@ function deleteToDisplay() {
 
 function calculate() {
     try {
-        if (display.value.contains('/0')) {
-            display.value = 'Nulou nelze dělit';
-        }
+
+        if (display.value.includes('/0')) {
+            display.value = 'Nulou nelze dělit!';
+
+        } else {
             display.value = eval(display.value);
+        }
+
         } catch (error) {
-            display.value = 'Chyba';
+            display.value = 'Chyba!';
         }
 }
